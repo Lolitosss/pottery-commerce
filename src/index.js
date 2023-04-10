@@ -5,23 +5,22 @@ import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { UserProvider } from "./contexts/user.context";
-import { ProductsProvider } from "./contexts/products.context";
 import { CartProvider } from "./contexts/cart.context";
-
+import { CategoriesProvider } from "./contexts/categories.context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <UserProvider>
-        <ProductsProvider>
-        <CartProvider>
-          <App />
+        <CategoriesProvider>
+          <CartProvider>
+            <App />
           </CartProvider>
-        </ProductsProvider>
+        </CategoriesProvider>
       </UserProvider>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
