@@ -65,6 +65,7 @@ const SignInForm = () => {
       <span>Sign in with your email and password</span>
       <form onSubmit={handleSubmit}>
         <FormInput
+          id='email'
           label='Email'
           type='email'
           required
@@ -74,6 +75,7 @@ const SignInForm = () => {
         />
 
         <FormInput
+          id='password'
           label='Password'
           type='password'
           required
