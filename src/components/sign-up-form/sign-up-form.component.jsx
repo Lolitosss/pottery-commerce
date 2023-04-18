@@ -62,6 +62,7 @@ const SignUpForm = () => {
       <span>Sign up with your email and password</span>
       <form onSubmit={handleSubmit}>
         <FormInput
+          id='display-name'
           label='Display Name'
           type='text'
           required
@@ -71,6 +72,7 @@ const SignUpForm = () => {
         />
 
         <FormInput
+          id='sign-up-email'
           label='Email'
           type='email'
           required
@@ -80,6 +82,7 @@ const SignUpForm = () => {
         />
 
         <FormInput
+          id='sign-up-password'
           label='Password'
           type='password'
           required
@@ -89,6 +92,7 @@ const SignUpForm = () => {
         />
 
         <FormInput
+          id='sign-up-confirm-password'
           label='Confirm Password'
           type='password'
           required
